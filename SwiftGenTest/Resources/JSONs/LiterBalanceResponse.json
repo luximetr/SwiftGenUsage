@@ -1,0 +1,15 @@
+{
+  "items": [
+    {
+      "fuel_grayscale_icon": "fuel_grayscale_icon_path",
+      "fuel_icon": "fuel_icon_path",
+      "fuel_id": 30,
+      "image": "image_path",
+      "network_grayscale_icon": "network_grayscale_icon_path",
+      "network_icon": "network_icon_path",
+      "network_type": "NetworkType",
+      "number": "124",
+      "volume": 12.41
+    }
+  ]
+}

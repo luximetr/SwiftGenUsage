@@ -1,0 +1,67 @@
+xcassets:
+  inputs:
+    - ../Assets/Assets.xcassets
+    - ../Assets/Tutorial.xcassets
+  outputs:
+    - templateName: swift4
+      output: ../Generated/Assets.swift
+
+colors:
+  inputs:
+    - ../Colors/TXT
+    - ../Colors/JSON
+    - ../Colors/XML
+    - ../Colors/CLR
+  outputs:
+    - templateName: swift4
+      output: ../Generated/Colors.swift
+
+fonts:
+  inputs:
+    - ../Fonts
+  outputs:
+    - templateName: swift4
+      output: ../Generated/Fonts.swift
+
+ib:
+  inputs:
+    - ../Storyboards
+  outputs:
+    - templateName: scenes-swift4
+      output: ../Generated/StoryboardScenes.swift
+    - templateName: segues-swift4
+      output: ../Generated/StoryboardSegues.swift
+
+json:
+  inputs:
+    - ../JSONs
+  outputs:
+    - templateName: runtimeDict-swift4
+      output: ../Generated/JSONs.swift
+
+plist:
+  inputs:
+    - ../Plists
+  outputs:
+    - templateName: runtime-swift4
+      output: ../Generated/Plist.swift
+
+strings:
+  inputs: 
+    - ../Strings/ru.lproj
+    - ../../PresentationLayer/UserStories/Profile/ru.lproj
+    - ../../PresentationLayer/UserStories/Start/ru.lproj
+  filter: .+\.strings$
+  outputs:
+    - templateName: multilangual-swift4
+      output: ../Generated/Strings.swift
+
+coredata:
+  inputs:
+    - ../../DataLayer/CoreData/SwiftGenTest.xcdatamodeld
+  outputs:
+    - templateName: swift4
+      output: ../Generated/CoreData.swift
+
+
+
