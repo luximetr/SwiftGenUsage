@@ -36,7 +36,8 @@ json:
   inputs:
     - ../JSONs
   outputs:
-    - templateName: runtimeDict-swift4
+    #- templateName: runtimeDict-swift4
+    - templateName: runtime-swift4
       output: ../Generated/JSONs.swift
 
 plist:
@@ -53,7 +54,8 @@ strings:
     - ../../PresentationLayer/UserStories/Start/ru.lproj
   filter: .+\.strings$
   outputs:
-    - templateName: multilangual-swift4
+    #- templateName: keyed-swift4
+    - templateName: structured-swift4
       output: ../Generated/Strings.swift
 
 coredata:

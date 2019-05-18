@@ -16,7 +16,7 @@ class StartVC: UIViewController {
   @IBOutlet weak var label: UILabel!
   @IBOutlet weak var nextButton: UIButton!
   
-  private let localizator = Localizator(stringsFileName: L10n.Start.fileName)
+//  private let localizator = Localizator(stringsFileName: L10n.Start.fileName)
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -40,7 +40,7 @@ class StartVC: UIViewController {
     // Fonts tests
     
     label.font = UIFont(font: FontFamily.Montserrat.regular, size: 20)
-    label.font = UIFont(font: FontFamily.Montserrat.bold, size: 20)
+    label.font = FontFamily.Montserrat.bold.font(size: 20)
     
     // Interface builder tests
     
@@ -55,8 +55,8 @@ class StartVC: UIViewController {
     
     // JSON tests
     
-    let literBalanceResponse = JSONFiles.LiterBalanceResponse.json
-    print(literBalanceResponse)
+//    let literBalanceResponse = JSONFiles.LiterBalanceResponse.json
+//    print(literBalanceResponse)
     
     let socialNetworksResponseNetworks = JSONFiles.SocialNetworksResponse.networks
     let socialNetworksResponseTitle = JSONFiles.SocialNetworksResponse.title
@@ -75,8 +75,8 @@ class StartVC: UIViewController {
     // Strings tests
     
     print(L10n.SignUp.signUp)
-//    print(L10n.Start.ценаГрн("20"))
-//    print(L10n.Profile.максимумDСимволов(5))
+    print(L10n.Start.ценаГрн("20"))
+    print(L10n.Start.максимумDСимволов(5))
     
     localize()
   }
@@ -91,11 +91,11 @@ class StartVC: UIViewController {
   
   @objc
   private func localize() {
-    changeLanguageButton.setTitle(localizator.localizedString(L10n.Start.сменитьЯзык), for: .normal)
-    nextButton.setTitle(localizator.localizedString(L10n.Start.далее), for: .normal)
-    label.text = localizator.localizedString(L10n.Start.демо)
-    priceLabel.text = localizator.localizedString(L10n.Start.ценаГрн, "20")
-    print(localizator.localizedString(L10n.Start.максимумDСимволов, 21))
+//    changeLanguageButton.setTitle(localizator.localizedString(L10n.Start.сменитьЯзык), for: .normal)
+//    nextButton.setTitle(localizator.localizedString(L10n.Start.далее), for: .normal)
+//    label.text = localizator.localizedString(L10n.Start.демо)
+//    priceLabel.text = localizator.localizedString(L10n.Start.ценаГрн, "20")
+//    print(localizator.localizedString(L10n.Start.максимумDСимволов, 21))
   }
   
   // Interface builder segues tests

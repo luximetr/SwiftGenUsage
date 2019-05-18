@@ -12,18 +12,15 @@ import Foundation
 internal enum JSONFiles {
   internal enum GetAuthorizationSuccess {
     private static let _document = JSONDocument(path: "GetAuthorizationSuccess.json")
-    internal static let json: [String: Any] = _document.data
     internal static let authorizationToken: String = _document["authorization_token"]
     internal static let success: Bool = _document["success"]
   }
   internal enum LiterBalanceResponse {
     private static let _document = JSONDocument(path: "LiterBalanceResponse.json")
-    internal static let json: [String: Any] = _document.data
     internal static let items: [[String: Any]] = _document["items"]
   }
   internal enum SocialNetworksResponse {
     private static let _document = JSONDocument(path: "SocialNetworksResponse.json")
-    internal static let json: [String: Any] = _document.data
     internal static let networks: [[String: Any]] = _document["networks"]
     internal static let title: String = _document["title"]
   }
